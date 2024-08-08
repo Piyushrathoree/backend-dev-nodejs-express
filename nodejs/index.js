@@ -1,101 +1,101 @@
-// const express = require('express');
-// const app = express();
-// const port = 3000;
+const express = require('express');
+const app = express();
+const port = 3000;
 
-// app.use(express.json()); // Middleware to parse JSON bodies
-// app.get('/', (req, res) => {
-//   res.send('Hello, World!');
-// });
+app.use(express.json()); // Middleware to parse JSON bodies
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
 
-// // PUT endpoint to update user profile
-// app.put('/user/:id', (req, res) => {
-//   const userId = req.params.id;
-//   const userData = req.body; // New data to replace the old profile
-//   // Example response
-//   res.send(`User profile with ID ${userId} updated with data: ${JSON.stringify(userData)}`);
-// });
+// PUT endpoint to update user profile
+app.put('/user/:id', (req, res) => {
+  const userId = req.params.id;
+  const userData = req.body; // New data to replace the old profile
+  // Example response
+  res.send(`User profile with ID ${userId} updated with data: ${JSON.stringify(userData)}`);
+});
 
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}/`);
-// });// GET endpoint for the root path
-
-
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
+});// GET endpoint for the root path
 
 
-//the put request change the whole data and update it 
-// const express = require('express');
-// const app = express();
-// const port = 3000;
-
-// app.use(express.json()); // Middleware to parse JSON bodies
-
-// // GET endpoint to retrieve user profile
-// app.get('/user/:id', (req, res) => {
-//   const userId = req.params.id;
-//   // Example response
-//   res.send(`Retrieved user profile with ID ${userId}`);
-// });
-
-// // PUT endpoint to update user profile
-// app.put('/user/:id', (req, res) => {
-//   const userId = req.params.id;
-//   const userData = req.body; // New data to replace the old profile
-//   // Example response
-//   res.send(`User profile with ID ${userId} updated with data: ${JSON.stringify(userData)}`);
-// });
-
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}/`);
-// });
-// // GET endpoint for the root path
-// app.get('/', (req, res) => {
-//   res.send('Hello, World!');
-// });
 
 
-//whereas the patch request do it partially means to say change few things only
+the put request change the whole data and update it 
+const express = require('express');
+const app = express();
+const port = 3000;
 
-// const express=require('express')
-// const app=express();
-// const port =3000;
-// app.use(express.json());
+app.use(express.json()); // Middleware to parse JSON bodies
 
-// app.patch('/user/:id',(req,res)=>{
-//   const userId=req.params.id;
-//   const userData=req.body;
-//   res.send(`User profile with ID ${userId} updated with data: ${JSON.stringify(userData)}`)
-// });
-// app.get('/',(req,res)=>{
-//   const userId=req.params.id;
-//   res.send(`Retrieved user profile with ID ${userId}`);
-// })
-// app.listen(port, () => {
-//     console.log(`Server running at http://localhost:${port}/`);
-//   });
-//   // GET endpoint for the root path
-//   app.get('/', (req, res) => {
-//     res.send('Hello, World!');
-//   });
+// GET endpoint to retrieve user profile
+app.get('/user/:id', (req, res) => {
+  const userId = req.params.id;
+  // Example response
+  res.send(`Retrieved user profile with ID ${userId}`);
+});
+
+// PUT endpoint to update user profile
+app.put('/user/:id', (req, res) => {
+  const userId = req.params.id;
+  const userData = req.body; // New data to replace the old profile
+  // Example response
+  res.send(`User profile with ID ${userId} updated with data: ${JSON.stringify(userData)}`);
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
+});
+// GET endpoint for the root path
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+
+whereas the patch request do it partially means to say change few things only
+
+const express=require('express')
+const app=express();
+const port =3000;
+app.use(express.json());
+
+app.patch('/user/:id',(req,res)=>{
+  const userId=req.params.id;
+  const userData=req.body;
+  res.send(`User profile with ID ${userId} updated with data: ${JSON.stringify(userData)}`)
+});
+app.get('/',(req,res)=>{
+  const userId=req.params.id;
+  res.send(`Retrieved user profile with ID ${userId}`);
+})
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}/`);
+  });
+  // GET endpoint for the root path
+  app.get('/', (req, res) => {
+    res.send('Hello, World!');
+  });
   
 
 
-//   const express = require('express');
-// const app = express();
-// const port = 3000;
+  const express = require('express');
+const app = express();
+const port = 3000;
 
-// app.use(express.json()); // Middleware to parse JSON bodies
+app.use(express.json()); // Middleware to parse JSON bodies
 
-// // OPTIONS endpoint to describe allowed methods
-// app.options('/resource', (req, res) => {
-//   res.set('Allow', 'GET, POST, PUT, DELETE');
-//   res.send('Allowed methods: GET, POST, PUT, DELETE');
-// });
+// OPTIONS endpoint to describe allowed methods
+app.options('/resource', (req, res) => {
+  res.set('Allow', 'GET, POST, PUT, DELETE');
+  res.send('Allowed methods: GET, POST, PUT, DELETE');
+});
 
  
 
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}/`);
-// });
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}/`);
+});
 
 
 
