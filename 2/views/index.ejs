@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create new users</title>
+    <link rel="stylesheet" href="/nodejs-db/2/public/stylesheets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 text-white">
+      <div class="nav ml-10 pt-5 text-blue-500 ">
+        <a href="/read">Read Users</a>
+      </div>
+         <h1 class="text-3xl tracking-tighter mb-5 pt-10 ml-10">Create User</h1>
+         <form action="/create" method="post">
+          <input type="text" placeholder="Name" name="name" class="w-78 bg-zinc-600 outline-none px-5 py-2 ml-10 rounded-lg">
+          <input type="text" placeholder="Email"  name="email" class=" w-78 bg-zinc-600 outline-none px-5 py-2 ml-3 rounded-lg">
+          <input type="text" placeholder="Image url" name="image" class=" w-78 bg-zinc-600 outline-none px-5 py-2 ml-3 rounded-lg">
+          <input type="submit" value="Create user" class="px-5 py-2 bg-blue-500 rounded-lg ml-5">
+         </form>
+    </div>
+</body>
+</html>

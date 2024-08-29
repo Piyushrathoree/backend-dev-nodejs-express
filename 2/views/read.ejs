@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All files</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <div class="w-full h-screen bg-zinc-900 text-white relative">
+            <h1 class="text-3xl pt-10 pl-10">All Users </h1>
+            <div class="user flex flex-wrap gap-5 m-3">
+                
+                <%users.forEach(function(user){%>
+                <div class="max-w-64 p-4 rounded-lg bg-zinc-800 flex flex-col justify-between">
+                <div>
+                    <div class="w-full rounded-lg"><img
+                            src="<%= user.image%>"
+                            class="h-58 w-58 object-cover rounded-lg"   
+                            alt></div>
+                    <h4 class="mt-3"><%= user.name%></h4>
+                    <h6 class="text-zinc-500"><%= user.email%></h6>
+                </div>
+                    <div class="flex mt-8 gap-5">
+                        <a href="/update/<%= user.email %>" class="text-blue-500">Edit User</a>
+                        <a href="/delete/<%= user.email %>" class="text-red-500">Remove User</a>
+                    </div>
+                </div>
+                <%})%>
+                   
+            </div>
+        </div>
+
+    </body>
+
+</html>
